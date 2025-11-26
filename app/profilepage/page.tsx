@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Pagination from "@/components/ui/Pagination";
+import Link from "next/link";
 
 // Mock Data for Designs
 const purchasedDesigns = [
@@ -185,9 +186,9 @@ export default function ProfilePage() {
                                     <span className="text-gray-400">{isCopied ? "Copied!" : personalWeb}</span>
                                     <svg className="text-[#00FF9D]" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2" /><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" /></svg>
                                 </button>
-                                <button className="bg-[#00FF9D] hover:bg-[#00cc7d] text-black px-6 py-2 rounded-full text-xs font-bold transition-colors shadow-[0_0_15px_rgba(0,255,157,0.3)]">
+                                <Link href="/createitem" className="bg-[#00FF9D] hover:bg-[#00cc7d] text-black px-6 py-2 rounded-full text-xs font-bold transition-colors shadow-[0_0_15px_rgba(0,255,157,0.3)]">
                                     + Create
-                                </button>
+                                </Link>
                             </div>
                         </div>
 
